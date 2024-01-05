@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        /* problem 1 */
+        #box1{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            transition: transform 0.5s;
+        }
+        #box1:hover{
+            transform: scale(1.2);
+        }
+        /* problem 2 */
+        #box2{
+            height: 100px;
+            width: 100px;
+            background-color: yellow;
+            opacity: 0.05;
+            transition: opacity;
+        }
+        #box2:hover{
+            opacity: 1;
+            transition: opacity 1s;
+        }
+        /* problem 3 */
+        @keyframes box3 {
+            100%{
+                opacity: 1;
+                transform: translate(200px);
+            }
+        }
+        #box3{
+            height: 100px;
+            width: 100px;
+            background-color: purple;
+            opacity: 0;
+            animation: box3 2s infinite;
+        }
+        /* problem 4 */
+        #box4{
+            height: 100px;
+            width: 100px;
+            background-color: cornflowerblue;
+            transition: transform 1s;
+        }
+        #box4:hover{
+            transform: rotate(360deg);
+        }
+        /* problem 5 */
+        #box5{
+            height: 100px;
+            width: 100px;
+            background-color: pink;
+            border-radius: 0%;
+            transition: border-radius 0.5s;
+        }
+        #box5:hover{
+            border-radius: 50%;
+        }
+        /* problem 6 */
+        @keyframes box6 {
+            from{
+                transform: translateX(0px);
+            }
+            to{
+                transform: translateX(1300px);
+            }
+        }
+        #box6{
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            border-radius: 0%;
+            animation: box6 4s ease  infinite;
+        }
+        #box7{
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            border-radius: 0%;
+            animation: box6 4s ease-in infinite;
+        }
+        #box8{
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            border-radius: 0%;
+            animation: box6 4s ease-out infinite;
+        }
+        #box9{
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            border-radius: 0%;
+            animation: box6 4s ease-in-out infinite;
+        }
+        #box10{
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            border-radius: 0%;
+            animation: box6 4s linear infinite;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+    <div id="box4"></div>
+    <div id="box5"></div>
+    <div id="box6"></div>
+    <div id="box7"></div>
+    <div id="box8"></div>
+    <div id="box9"></div>
+    <div id="box10"></div>
+</body>
+</html>
